@@ -1,0 +1,4 @@
+# 为空，bootstrap.yml
+spring:
+  profiles:
+    active:

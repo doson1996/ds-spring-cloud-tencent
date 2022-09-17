@@ -1,0 +1,14 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: example-provider
+
+  cloud:
+    polaris:
+      address: grpc://ds.com:8091
+      discovery:
+        enabled: true
+      stat:
+        enabled: true
+        port: 18081

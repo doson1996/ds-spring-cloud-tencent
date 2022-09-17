@@ -1,0 +1,15 @@
+# 动态配置
+server:
+  port: 8083
+spring:
+  application:
+    name: example-provider
+  cloud:
+    polaris:
+      address: grpc://ds.com:8091
+      namespace: default
+      config:
+        auto-refresh: true # auto refresh when config file changed
+        groups:
+          - name: exampl # group name
+            files: [ "config/provider.properties" ]
